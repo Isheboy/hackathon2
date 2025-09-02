@@ -1,116 +1,159 @@
-# hackathon2
-hackathon2 vibe coding
 # FoodLink AI 🌱🥗
+
+**Hackathon Submission - Food Waste Reduction Platform**  
+**Team**: JANICE SEWAVA, ELVIS KESSY, ISHENGOMA KAKWEZI
+
+---
+
+## Live Demo
+
+**[View Live Application](https://foodlinkai.netlify.app/)**
+
+Successfully deployed on Netlify with full PWA functionality.
+
+### Application Preview
+
+![FoodLink AI Preview](./public/foodlink-preview.png)
+![Mobile App Preview](./public/foodlink-mobile.png)
+![Dashboard Preview](./public/foodlink-dashboard.png)
+_Desktop and mobile responsive design showcase_
+
+---
+
+## Overview
 
 **FoodLink AI** is a hackathon project focused on **reducing food waste** by connecting surplus food providers (restaurants, bakeries, grocery stores) with communities, NGOs, and buyers using **AI-powered matching**. The platform works as a **web and mobile PWA**, includes real-time dashboards, micro-lessons, and optional monetization via **Paystack**.
 
 ---
 
-## Features
+## Key Features
 
-- Snap & list surplus food in 30 seconds
-- AI-powered matching by distance, freshness, dietary needs
-- Reserve & pickup securely
-- Impact dashboard: meals saved, partners, revenue
-- Mobile-friendly Progressive Web App (PWA)
-- Offline-first support with Service Worker
-- Demo mode with mock data included
+- **Quick Listing**: Snap & list surplus food in 30 seconds
+- **AI-Powered Matching**: Smart matching by distance, freshness, dietary needs
+- **Secure Reservations**: Reserve & pickup securely with payment integration
+- **Impact Dashboard**: Track meals saved, partners, revenue
+- **PWA Ready**: Mobile-friendly Progressive Web App
+- **Offline Support**: Offline-first support with Service Worker
+- **Demo Mode**: Includes mock data for immediate testing
 
 ---
 
 ## Tech Stack
 
-**Frontend:** HTML5, CSS, JavaScript  
+**Frontend:** HTML5, CSS3, JavaScript  
 **Backend:** Python (FastAPI), MySQL  
-**PWA:** Service Worker, manifest.webmanifest  
-**AI & Low-code Tools:** Cursor AI, MetaGPT X, Superbase, Lovable Dev  
-**Payments:** Paystack  
-**Deployment:** Vercel, Heroku (optional)  
+**PWA:** Service Worker, Web App Manifest  
+**AI & Tools:** Cursor AI, MetaGPT X, Supabase, Lovable Dev  
+**Payments:** Paystack Integration  
+**Deployment:** Netlify, Vercel, Heroku
 
 ---
 
+## Repository & Deployment Links
 
-### 1. Clone the Repository
+**GitHub Repository**: [https://github.com/Jsews/hackathon2](https://github.com/Jsews/hackathon2)  
+**Live Demo**: [https://foodlinkai.netlify.app/](https://foodlinkai.netlify.app/)  
+**Pitch Deck**: [Canva Presentation](https://www.canva.com/design/DAGxt0-C9SU/npNLexSIkpwGqCljCNeFqQ/edit?utm_content=DAGxt0-C9SU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
-```bash
-git clone "https://github.com/Jsews/hackathon2."
-cd hackathon2
-________________________________________
-2. Frontend Setup (Demo Mode)
-1.	Open frontend/index.html in VS Code Live Server or any static server.
-2.	Navigate to /login.html to sign in with demo credentials.
-3.	Go to /insight.html to view AI-powered mock items (Chicken Rice Boxes, Bakery Packs, Vegetable Mix Boxes) and impact charts.
-________________________________________
-3. Backend Setup (Optional for real API)
-1.	Create a MySQL database and run answer.sql to create tables.
-2.	Create a Python virtual environment:
-python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
-3.	Install dependencies:
-pip install fastapi uvicorn mysql-connector-python python-jose PyJWT
-4.	Set environment variables:
-export DB_HOST=localhost
-export DB_USER=root
-export DB_PASS=yourpassword
-export DB_NAME=foodlink
-export PAYSTACK_SECRET=your_paystack_key
-export SUPABASE_JWKS=your_supabase_jwks
-5.	Run the backend server:
-uvicorn backend.main:app --reload --port 8000
-6.	Update frontend window.API_BASE to point to your backend:
-window.API_BASE = "http://localhost:8000";
-________________________________________
-4. Deployment
-Option 1: Vercel
-1.	Push repo to GitHub.
-2.	Connect Vercel and deploy the frontend/ folder.
-3.	Enable static site deployment and PWA support.
-Option 2: Heroku (for backend)
-1.	Push backend folder to GitHub.
-2.	Create a new Heroku app.
-3.	Add environment variables via dashboard or CLI.
-4.	Deploy with GitHub integration or git push heroku main.
-________________________________________
-5. GitHub Repository
-GitHub Repo = "https://github.com/Jsews/hackathon2.git"
-________________________________________
-6. Deployment Link
-Live Demo Link
-(Replace with your actual deployed URL)
-________________________________________
-7. Pitch Deck
-Link = "https://www.canva.com/design/DAGxt0-C9SU/npNLexSIkpwGqCljCNeFqQ/edit?utm_content=DAGxt0-C9SU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
-________________________________________________________________________________
-9. File Structure
-foodlink-ai/
-│
-├── frontend/
-│   ├── index.html
-│   ├── insight.html
-│   ├── login.html
-│   ├── style.css
-│   ├── script.js
-│   ├── sw.js
-│   └── manifest.webmanifest
-│
-├── backend/
-│   └── main.py
-│
-├── answer.sql
-└── README.md
-________________________________________
-10. Credits
-•	Developed by-
-•	JANICE SEWAVA
-•	ELVIS KESSY
-•	ISHENGOMA  KAKWEZI
-•	Hackathon Project: Zero Hunger / Food Sustainability
-•	Stock images: Unsplash
-•	Tools: FastAPI, Supabase, Paystack, Cursor AI, MetaGPT X, Lovable Dev
-________________________________________
-11. Notes & Tips
-•	Use demo mode for immediate web/mobile preview.
-•	Connect Supabase Auth for real login functionality.
-•	Enable HTTPS in production for secure payments and service worker.
-•	Optional: Add animated impact charts and more food categories for visual appeal.
+---
 
+## Quick Start Guide
+
+### Option 1: View Live Demo (Recommended)
+
+Simply visit **[https://foodlinkai.netlify.app/](https://foodlinkai.netlify.app/)** to experience the full application with all features enabled.
+
+### Option 2: Run Locally
+
+1. **Clone the Repository**
+
+   ```bash
+   git clone https://github.com/Jsews/hackathon2.git
+   cd hackathon2
+   ```
+
+2. **Frontend Demo Mode**
+
+   - Open `index.html` in VS Code Live Server or any static server
+   - Navigate to `/login.html` to sign in with demo credentials
+   - Go to `/insight.html` to view AI-powered mock items and impact charts
+
+3. **Backend Setup (Optional for real API)**
+   - Create a MySQL database and run `answer.sql` to create tables
+   - Create a Python virtual environment:
+   ```bash
+   python -m venv .venv
+   .venv\Scripts\activate  # Windows
+   ```
+   - Install dependencies:
+   ```bash
+   pip install fastapi uvicorn mysql-connector-python python-jose PyJWT
+   ```
+   - Set environment variables and run:
+   ```bash
+   uvicorn main:app --reload --port 8000
+   ```
+
+---
+
+## Project Structure
+
+```
+hackathon2/
+│
+├── index.html              # Main application entry point
+├── login.html              # User authentication page
+├── insight.html            # AI-powered dashboard
+├── style.css               # Application styling
+├── script.js               # Frontend functionality
+├── sw.js                   # Service Worker for PWA
+├── manifest.webmanifest    # PWA manifest
+├── main.py                 # FastAPI backend server
+├── answer.sql              # Database schema
+├── public/                 # Assets and preview images
+└── README.md               # Project documentation
+```
+
+---
+
+## Deployment Options
+
+### Option 1: Netlify (Frontend)
+
+1. Push repository to GitHub
+2. Connect Netlify and deploy
+3. Enable PWA support
+
+### Option 2: Heroku (Backend)
+
+1. Create new Heroku app
+2. Add environment variables
+3. Deploy with GitHub integration
+
+---
+
+## Team Credits
+
+**Developed by:**
+
+- **JANICE SEWAVA** - Lead Developer
+- **ELVIS KESSY** - Backend Developer
+- **ISHENGOMA KAKWEZI** - Frontend Developer
+
+**Project Focus:** Zero Hunger / Food Sustainability  
+**Tools Used:** FastAPI, Supabase, Paystack, Cursor AI, MetaGPT X, Lovable Dev  
+**Images:** Unsplash
+
+---
+
+## Development Notes
+
+- Use demo mode for immediate web/mobile preview
+- Connect Supabase Auth for real login functionality
+- Enable HTTPS in production for secure payments and service worker
+- Optional: Add animated impact charts and more food categories for visual appeal
+
+---
+
+**Hackathon Project: Reducing Food Waste Through Technology**  
+Making a difference one meal at a time 🌍
